@@ -46,7 +46,7 @@ namespace WpfEmployee.ViewModels
         public string TitleOfCourtesy
         {
             get { return _monEmployee.TitleOfCourtesy; }
-            set
+            set 
             {
                 _monEmployee.TitleOfCourtesy = value;
 
@@ -75,10 +75,10 @@ namespace WpfEmployee.ViewModels
             get { return _monEmployee.FirstName; }
             set
             {
-                _monEmployee.FirstName = value;
-                OnPropertyChanged("FullName");
+                    _monEmployee.FirstName = value;
+                    OnPropertyChanged("FullName");
+                }
             }
-        }
         public DateTime? BirthDate
         {
             get { return _monEmployee.BirthDate; }

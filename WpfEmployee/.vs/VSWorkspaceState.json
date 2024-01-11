@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Views"
   ],
-  "SelectedNode": "\\WpfEmployee.csproj",
+  "SelectedNode": "\\WpfEmployee.sln",
   "PreviewInSolutionExplorer": false
 }

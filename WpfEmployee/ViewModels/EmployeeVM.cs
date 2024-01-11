@@ -140,6 +140,7 @@ namespace WpfEmployee.ViewModels
             EmployeeModel EModel = new EmployeeModel(EGlobal);
             EmployeesList.Add(EModel);
             SelectedEmployee = EModel;
+            MessageBox.Show("add en base de données fait");
         }
 
         private void SaveEmployee()
@@ -153,7 +154,7 @@ namespace WpfEmployee.ViewModels
             }
 
             dc.SaveChanges();
-            MessageBox.Show("Enregistrement en base de données fait");
+            MessageBox.Show("save en base de données fait");
 
 
         }
