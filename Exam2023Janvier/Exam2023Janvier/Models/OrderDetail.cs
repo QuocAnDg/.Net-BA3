@@ -12,6 +12,6 @@ namespace Exam2023Janvier.Models
         public float Discount { get; set; }
 
         public virtual Order Order { get; set; } = null!;
-        public virtual Product Product { get; set; } = null!;
+        public virtual Product Product { get; set; } = null!;   
     }
 }

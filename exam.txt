@@ -1,0 +1,29 @@
+2.	Créer la base de données Northwind à partir du fichier « Northwind4SqlServer.sql»
+a.	Récupérer sur MooVin le fichier « Northwind4SQLServer.sql» dans les ressources
+b.	Exécuter un query avec ce fichier SQL dans Visual Studio
+i.	Outils –> SQL SERVER -> Nouvelle requête/query
+ii.	Copier-coller le code du fichier «Northwind4SQLServer.sql»
+iii.	Exécuter le code du query (bouton play vert en haut à gauche de la fenêtre query)
+3.	Voir la base de données Northwind
+a.	Dans Visual Studio, vous pouvez manipuler les bases de données SQL SERVER via l’explorateur d’objets SQL SERVER
+b.	Affichage -> Explorateur d’objets SQL SERVER
+c.	Vous devez vous connecter à une instance SQL Server. Nous utiliserons toujours l’instance : (localdb)\MSSQLLocaldb
+d.	Vérifier que vous avez bien une base de données Northwind et afficher les données d’une table
+
+
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer
+EntityFrameworkCore.Proxies
+
+Scaffold-DbContext -OutputDir Models 'Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind' Microsoft.EntityFrameworkCore.SqlServer
+
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+   if (!optionsBuilder.IsConfigured)
+   {
+   optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Northwind;MultipleActiveResultSets=True")
+           .UseLazyLoadingProxies();
+   }        
+}

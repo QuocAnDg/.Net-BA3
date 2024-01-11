@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Seance6-recap.props" />
+</Project>

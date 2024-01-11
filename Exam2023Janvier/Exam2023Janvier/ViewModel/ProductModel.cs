@@ -14,11 +14,21 @@ namespace Exam2023Janvier.ViewModel
         
     
         private readonly Product _monProduct;
+        private int? _countProduct;
+        private string? _country;
+        public ProductModel()
+        {
+        }
+        public ProductModel(int count, string country)
+        {
+            _countProduct = count;
+            _country = country;
+        }
         public ProductModel(Product product)
         {
             _monProduct = product;
         }
-
+ 
         public int ProductId
         {
             get { return _monProduct.ProductId; }
@@ -44,6 +54,7 @@ namespace Exam2023Janvier.ViewModel
                 }
             }
         }
+       
 
         public string Category
         {
@@ -71,6 +82,30 @@ namespace Exam2023Janvier.ViewModel
             }
         }
 
+        public string? Country
+        {
+            get { return _country; }
+            set
+            {
+                if (_country != value)
+                {
+                    _country = value;
+
+                }
+            }
+        }
+        public int? CountProduct
+        {
+            get { return _countProduct; }
+            set
+            {
+                if (_countProduct != value)
+                {
+                    _countProduct = value;
+
+                }
+            }
+        }
 
 
     }

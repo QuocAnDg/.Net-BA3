@@ -31,6 +31,17 @@
             <TextBox  Text="{Binding SelectedProduct.Category, UpdateSourceTrigger=PropertyChanged}" Height="45"/>
             <TextBox  Text="{Binding SelectedProduct.Supplier, UpdateSourceTrigger=PropertyChanged}" Height="45"/>
         </StackPanel>
+        <DataGrid Name="dgOrders" Margin="545,36,10,36" AutoGenerateColumns="False" ItemsSource="{Binding DataContext.CountriesProducts, 
+                 RelativeSource={RelativeSource FindAncestor,
+                 AncestorType={x:Type Window}}}" IsReadOnly="True">
+            <DataGrid.Columns>
+                <!--<DataGridTextColumn Binding="{Binding LastName}" Header="Name" Width="*" />-->
+                <DataGridTextColumn Binding="{Binding Country}" Header="country" Width="*" />
+                <DataGridTextColumn Binding="{Binding CountProduct}" Header="nb" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
         <Button Command ="{Binding DeleteProduct}" Content="Abandonner le produit" Width="228" Margin="0,368,502,10" HorizontalAlignment="Right"/>
+        
     </Grid>
+   
 </Window>

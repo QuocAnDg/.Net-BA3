@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+
 using WpfApplication1.ViewModels;
 
 namespace Exam2023Janvier.ViewModel
@@ -16,6 +17,7 @@ namespace Exam2023Janvier.ViewModel
 
         private NorthwindContext dc = new NorthwindContext();
         private ObservableCollection<ProductModel> _ProductList;
+        private ObservableCollection<ProductModel> _CountriesProducts;
         private ProductModel _selectedProduct;
 
         private DelegateCommand _deleteProduct;
@@ -38,6 +40,7 @@ namespace Exam2023Janvier.ViewModel
                 return _ProductList;
             }
         }
+     
 
         private ObservableCollection<ProductModel> LoadProducts()
         {
@@ -53,6 +56,7 @@ namespace Exam2023Janvier.ViewModel
 
             return localCollection;
         }
+ 
         public DelegateCommand DeleteProduct
         {
             get { return _deleteProduct = _deleteProduct ?? new DelegateCommand(DeleteSelectedProduct); }
@@ -78,6 +82,31 @@ namespace Exam2023Janvier.ViewModel
                 }
               
             }
+        }
+        public ObservableCollection<ProductModel> CountriesProducts
+        {
+            get
+            {
+                if (_CountriesProducts == null)
+                {
+                    _CountriesProducts = LoadProductsPerCountry();
+                }
+                return _CountriesProducts;
+            }
+        }
+        public ObservableCollection<ProductModel> LoadProductsPerCountry()
+        {
+            var productsPerCountry = dc.Products
+                 .Where(p => p.OrderDetails.Any())
+                .GroupBy(p => p.Supplier.Country)
+                .Select(group => new ProductModel
+                {
+                    Country = group.Key,
+                    CountProduct = group.Count()
+                })
+                .ToList();
+
+            return new ObservableCollection<ProductModel>(productsPerCountry);
         }
     }
 }
