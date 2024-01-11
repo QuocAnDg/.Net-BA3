@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Seance1_Dotnet_S1</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="client\Test.cs" />
+    <Compile Remove="domaine\Actor.cs" />
+    <Compile Remove="domaine\Director.cs" />
+    <Compile Remove="domaine\Movie.cs" />
+    <Compile Remove="domaine\Person.cs" />
+    <Compile Remove="domaine\PersonList.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="client\Test.cs" />
+    <None Include="domaine\Actor.cs" />
+    <None Include="domaine\Director.cs" />
+    <None Include="domaine\Movie.cs" />
+    <None Include="domaine\Person.cs" />
+    <None Include="domaine\PersonList.cs" />
+  </ItemGroup>
+
+</Project>

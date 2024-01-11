@@ -1,0 +1,14 @@
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\bin\Debug\net6.0\Seance1-Dotnet-S1.exe
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\bin\Debug\net6.0\Seance1-Dotnet-S1.deps.json
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\bin\Debug\net6.0\Seance1-Dotnet-S1.runtimeconfig.json
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\bin\Debug\net6.0\Seance1-Dotnet-S1.dll
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\bin\Debug\net6.0\Seance1-Dotnet-S1.pdb
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\obj\Debug\net6.0\Seance1-Dotnet-S1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\obj\Debug\net6.0\Seance1-Dotnet-S1.AssemblyInfoInputs.cache
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\obj\Debug\net6.0\Seance1-Dotnet-S1.AssemblyInfo.cs
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\obj\Debug\net6.0\Seance1-Dotnet-S1.csproj.CoreCompileInputs.cache
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\obj\Debug\net6.0\Seance1-Dotnet-S1.dll
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\obj\Debug\net6.0\refint\Seance1-Dotnet-S1.dll
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\obj\Debug\net6.0\Seance1-Dotnet-S1.pdb
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\obj\Debug\net6.0\Seance1-Dotnet-S1.genruntimeconfig.cache
+C:\Users\quoca\Desktop\Dotnet\Séance1\Seance1-Dotnet-S1\Seance1-Dotnet-S1\obj\Debug\net6.0\ref\Seance1-Dotnet-S1.dll

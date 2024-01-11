@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Seance1-Dotnet-S1/1.0.0": {
+        "runtime": {
+          "Seance1-Dotnet-S1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Seance1-Dotnet-S1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
