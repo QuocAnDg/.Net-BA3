@@ -104,6 +104,7 @@ namespace Exam2023Janvier.ViewModel
                     Country = group.Key,
                     CountProduct = group.Count()
                 })
+                .OrderByDescending(model => model.CountProduct)
                 .ToList();
 
             return new ObservableCollection<ProductModel>(productsPerCountry);
